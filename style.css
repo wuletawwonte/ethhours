@@ -2,3 +2,25 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  border: 2px groove gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second {
+  position: absolute;
+  width: 10vw;
+}
