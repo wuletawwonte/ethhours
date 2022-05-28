@@ -11,9 +11,10 @@ body {
 }
 
 #app {
+  border-radius: 50%;
   position: relative;
-  width: 30vw;
-  height: 30vw;
+  min-width: 300px;
+  min-height: 300px;
   border: 2px groove gray;
   display: flex;
   align-items: center;
@@ -21,6 +22,10 @@ body {
 }
 
 .second {
+  display: none;
   position: absolute;
-  width: 10vw;
+  width: 120px;
+  height: 2px;
+  background-color: blue;
+  border: none;
 }
