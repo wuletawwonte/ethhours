@@ -8,6 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #e0e0e0;
 }
 
 #app {
@@ -15,17 +16,24 @@ body {
   position: relative;
   min-width: 300px;
   min-height: 300px;
-  border: 2px groove gray;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
 }
 
-.second {
+.second,
+.minute {
   display: none;
   position: absolute;
   width: 120px;
-  height: 2px;
+  height: 1px;
   background-color: blue;
   border: none;
+}
+
+.minute {
+  background-color: black;
+  height: 2px;
 }

@@ -1,14 +1,19 @@
 const app = document.getElementById('app');
 const second = document.querySelector('.second');
+const minute = document.querySelector('.minute');
 
-
-const rotateMe = (el) => {
+const rotateClock = (sec, min) => {
   const d = new Date();
-  let rdeg = 6 * (d.getSeconds() - 15);
-  el.style.display = "block";
-  el.style.transform = `rotate(${rdeg}deg) translateX(60px)`;
+  let secDeg = (6 * d.getSeconds()) - 90;
+  let minDeg = (6 * d.getMinutes()) - 90;
+  sec.style.transform = `rotate(${secDeg}deg) translateX(60px)`;
+  min.style.transform = `rotate(${minDeg}deg) translateX(60px)`;
 };
 
-rotateMe(second);
+rotateClock(second, minute);
+second.style.display = "block";
+minute.style.display = "block";
 
-setInterval(() => rotateMe(second), 1000);
+setInterval(() => {
+  rotateClock(second, minute);
+}, 1000);
