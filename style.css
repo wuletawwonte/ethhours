@@ -6,9 +6,26 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 150px;
+  border-radius: 0px;
   background: #e0e0e0;
+  box-shadow: inset 5px 5px 12px #d5d5d5, inset -5px -5px 12px #ebebeb;
+}
+
+header h1 {
+  font-size: 20px;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 #app {
@@ -23,7 +40,6 @@ body {
 }
 
 .app-content {
-  /* border: 1px solid gray; */
   border-radius: 50%;
   min-width: 300px;
   min-height: 300px;
@@ -33,8 +49,7 @@ body {
   justify-content: center;
   border-radius: 50%;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow:  5px 5px 26px #d0d0d0,
-               -5px -5px 26px #f0f0f0;
+  box-shadow: 5px 5px 26px #d0d0d0, -5px -5px 26px #f0f0f0;
 }
 
 .second,
@@ -51,4 +66,12 @@ body {
   background-color: black;
   height: 2px;
   width: 90px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: black;
+  border-radius: 50%;
 }
