@@ -13,14 +13,16 @@ body {
 
 header {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px 150px;
-  border-radius: 0px;
+  border-radius: 50px;
   background: #e0e0e0;
-  box-shadow: inset 5px 5px 12px #d5d5d5, inset -5px -5px 12px #ebebeb;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+
 }
 
 header h1 {
