@@ -7,7 +7,7 @@ const rotateClock = (sec, min) => {
   let secDeg = (6 * d.getSeconds()) - 90;
   let minDeg = (6 * d.getMinutes()) - 90;
   sec.style.transform = `rotate(${secDeg}deg) translateX(60px)`;
-  min.style.transform = `rotate(${minDeg}deg) translateX(60px)`;
+  min.style.transform = `rotate(${minDeg}deg) translateX(45px)`;
 };
 
 rotateClock(second, minute);

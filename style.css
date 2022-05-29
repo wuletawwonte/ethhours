@@ -13,14 +13,28 @@ body {
 
 #app {
   border-radius: 50%;
-  position: relative;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 350px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #e0e0e0;
   box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+
+.app-content {
+  /* border: 1px solid gray; */
+  border-radius: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow:  5px 5px 26px #d0d0d0,
+               -5px -5px 26px #f0f0f0;
 }
 
 .second,
@@ -36,4 +50,5 @@ body {
 .minute {
   background-color: black;
   height: 2px;
+  width: 90px;
 }
