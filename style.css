@@ -75,3 +75,22 @@ header h1 {
   background-color: black;
   border-radius: 50%;
 }
+
+.hour-characters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.middle-hour-characters {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+}
