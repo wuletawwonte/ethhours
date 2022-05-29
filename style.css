@@ -89,13 +89,11 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid red;
   background-image: url("./clockbgg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-  z-index: 0;
 }
 
 .hour-characters h3 {
