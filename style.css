@@ -55,10 +55,11 @@ header h1 {
 }
 
 .second,
-.minute {
+.minute, 
+.hour {
   display: none;
   position: absolute;
-  width: 120px;
+  width: 100px;
   height: 1px;
   background-color: blue;
   border: none;
@@ -68,6 +69,12 @@ header h1 {
   background-color: black;
   height: 2px;
   width: 90px;
+}
+
+.hour {
+  background-color: black;
+  height: 3px;
+  width: 70px;
 }
 
 .dot {
