@@ -11,7 +11,6 @@ const rotateClock = (sec, min, hr) => {
   sec.style.transform = `rotate(${secDeg}deg) translateX(45px)`;
   min.style.transform = `rotate(${minDeg}deg) translateX(40px)`;
   hr.style.transform = `rotate(${hourDeg}deg) translateX(30px)`;
-  console.log(secDeg, minDeg, hourDeg);
 };
 
 rotateClock(second, minute, hour);
