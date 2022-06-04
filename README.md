@@ -10,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]([https://livedemo.com](https://wuletawwonte.github.io/analog-clock/))
 
 
 ## Getting Started
