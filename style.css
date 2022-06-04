@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  color: blue;
   margin-top: 50px;
   margin-bottom: 100px;
   display: flex;
@@ -43,8 +44,8 @@ header h1 {
 
 .app-content {
   border-radius: 50%;
-  min-width: 270px;
-  min-height: 270px;
+  min-width: 260px;
+  min-height: 260px;
   position: relative;
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@ header h1 {
 .hour {
   display: none;
   position: absolute;
-  width: 100px;
+  width: 90px;
   height: 1px;
   background-color: blue;
   border: none;
@@ -68,13 +69,13 @@ header h1 {
 .minute {
   background-color: black;
   height: 2px;
-  width: 90px;
+  width: 80px;
 }
 
 .hour {
   background-color: black;
   height: 3px;
-  width: 70px;
+  width: 60px;
 }
 
 .dot {
@@ -106,6 +107,7 @@ header h1 {
 .hour-characters h3 {
   font-weight: 100;
   font-size: 1.2rem;
+  color: blue;
 }
 
 .middle-hour-characters {

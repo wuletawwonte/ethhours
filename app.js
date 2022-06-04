@@ -8,9 +8,9 @@ const rotateClock = (sec, min, hr) => {
   let secDeg = (6 * d.getSeconds()) - 90;
   let minDeg = (6 * d.getMinutes()) - 90;
   let hourDeg = ((30 * d.getHours()) - 90) + ((5 * minDeg)/360);
-  sec.style.transform = `rotate(${secDeg}deg) translateX(50px)`;
-  min.style.transform = `rotate(${minDeg}deg) translateX(45px)`;
-  hr.style.transform = `rotate(${hourDeg}deg) translateX(35px)`;
+  sec.style.transform = `rotate(${secDeg}deg) translateX(45px)`;
+  min.style.transform = `rotate(${minDeg}deg) translateX(40px)`;
+  hr.style.transform = `rotate(${hourDeg}deg) translateX(30px)`;
 };
 
 rotateClock(second, minute, hour);
