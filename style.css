@@ -6,26 +6,112 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+}
+
+header {
+  color: blue;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 150px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+
+}
+
+header h1 {
+  font-size: 20px;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 #app {
   border-radius: 50%;
-  position: relative;
   min-width: 300px;
   min-height: 300px;
-  border: 2px groove gray;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
 }
 
-.second {
+.app-content {
+  border-radius: 50%;
+  min-width: 260px;
+  min-height: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 26px #d0d0d0, -5px -5px 26px #f0f0f0;
+}
+
+.second,
+.minute, 
+.hour {
   display: none;
   position: absolute;
-  width: 120px;
-  height: 2px;
+  width: 90px;
+  height: 1px;
   background-color: blue;
   border: none;
+}
+
+.minute {
+  background-color: black;
+  height: 2px;
+  width: 80px;
+}
+
+.hour {
+  background-color: black;
+  height: 3px;
+  width: 60px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.hour-characters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url("./clockbgg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.hour-characters h3 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.middle-hour-characters {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
 }
