@@ -18,4 +18,4 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: clock.wuletawwonte.com/
-        local-dir: .
+        local-dir: /
