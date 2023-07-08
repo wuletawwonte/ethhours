@@ -8,10 +8,9 @@
 - HTML5
 - CSS3
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link]([https://livedemo.com](https://wuletawwonte.github.io/analog-clock/))
-
+[Live Demo Link](https://clock.wuletawwonte.com)
 
 ## Getting Started
 
