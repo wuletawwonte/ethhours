@@ -14,9 +14,11 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+1. Clone the project from GitHub
+```bash
+git clone git@github.com:wuletawwonte/analog-clock.git
+```
+2. To run the project locally open the `index.html` file in a browser or use static servers of any type to serve the project. 
 
 ## Authors
 
