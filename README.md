@@ -11,6 +11,7 @@
 ## Live Demo
 
 [Live Demo Link](https://clock.wuletawwonte.com)
+![FireShot Capture 013 - Clock - clock wuletawwonte com](https://github.com/wuletawwonte/analog-clock/assets/12524453/421019da-4c80-4341-81e2-78c7a465f962)
 
 ## Getting Started
 
