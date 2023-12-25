@@ -1,13 +1,18 @@
 const app = document.getElementById('app');
-const second = document.querySelector('.second');
-const minute = document.querySelector('.minute');
-const hour = document.querySelector('.hour');
+const second = document.querySelector('.second') as HTMLElement;
+const minute = document.querySelector('.minute') as HTMLElement;
+const hour = document.querySelector('.hour') as HTMLElement;
 
-const rotateClock = (sec, min, hr) => {
+const updateClock = () => {
   const d = new Date();
-  let secDeg = 6 * d.getSeconds() - 90;
-  let minDeg = 6 * d.getMinutes() - 90;
-  let hourDeg = 30 * d.getHours() - 90 + (30 * (minDeg + 90)) / 360;
+  const secDeg = 6 * d.getSeconds() - 90;
+  const minDeg = 6 * d.getMinutes() - 90;
+  const hourDeg = 30 * d.getHours() - 90 + (30 * (minDeg + 90)) / 360;
+  return { secDeg, minDeg, hourDeg };
+};
+
+const rotateClock = (sec: HTMLElement, min: HTMLElement, hr: HTMLElement) => {
+  const { secDeg, minDeg, hourDeg } = updateClock();
   sec.style.transform = `rotate(${secDeg}deg) translateX(45px)`;
   min.style.transform = `rotate(${minDeg}deg) translateX(40px)`;
   hr.style.transform = `rotate(${hourDeg}deg) translateX(30px)`;
