@@ -1,7 +1,11 @@
 const app = document.getElementById('app');
-const second = document.querySelector('.second') as HTMLElement;
-const minute = document.querySelector('.minute') as HTMLElement;
-const hour = document.querySelector('.hour') as HTMLElement;
+const second = document.querySelector<HTMLElement>('.second');
+const minute = document.querySelector<HTMLElement>('.minute');
+const hour = document.querySelector<HTMLElement>('.hour');
+
+if (second === null || minute === null || hour === null) {
+  throw new Error('Element not found');
+}
 
 const updateClock = () => {
   const d = new Date();
