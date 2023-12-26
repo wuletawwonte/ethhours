@@ -8,20 +8,20 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-    
-    - name: 🛠️ Install dependencies
-      run: yarn ci
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-    - name: 🛠️ Build project
-      run: yarn run build
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.wuletawwonte.com
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: clock.wuletawwonte.com/
-        local-dir: ./
+      - name: 🛠️ Install dependencies
+        run: npm ci
+
+      - name: 🛠️ Build project
+        run: npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.wuletawwonte.com
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: clock.wuletawwonte.com/
+          local-dir: ./
