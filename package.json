@@ -1,0 +1,17 @@
+{
+  "name": "analog-clock",
+  "version": "1.0.0",
+  "description": "> This is an analog clock application built using vanilla javascript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
