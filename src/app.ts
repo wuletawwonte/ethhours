@@ -1,7 +1,31 @@
 const app = document.getElementById('app');
-const second = document.querySelector<HTMLElement>('.second');
-const minute = document.querySelector<HTMLElement>('.minute');
-const hour = document.querySelector<HTMLElement>('.hour');
+
+const render = (
+  app: HTMLElement,
+  timeDeg: { sec: number; min: number; hour: number }
+) => {
+  app.innerHTML = `<div class="app-content">
+  <hr class="second" style="rotate(${timeDeg.sec}deg) translateX(45px)" />
+  <hr class="minute" style="rotate(${timeDeg.min}deg) translateX(40px)" />
+  <hr class="hour" style="rotate(${timeDeg.hour}deg) translateX(30px)" />
+  <hr class="dot" />
+  <div class="hour-characters">
+    <h3>፲፪</h3>
+    <div class="middle-hour-characters">
+      <h3>፱</h3>
+      <h3>፫</h3>
+    </div>
+    <h3>፮</h3>
+  </div>
+</div>
+`;
+};
+
+const time = {
+  second: null,
+  minute: null,
+  hour: null,
+};
 
 if (second === null || minute === null || hour === null) {
   throw new Error('Element not found');
