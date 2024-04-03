@@ -48,19 +48,4 @@ setInterval(() => {
   myTime.second = new Date().getSeconds();
   myTime.minute = new Date().getMinutes();
   myTime.hour = new Date().getHours();
-
-  console.log(myTime);
 }, 1000);
-
-// const updateClock = () => {
-//   const d = new Date();
-//   const secDeg = 6 * d.getSeconds() - 90;
-//   const minDeg = 6 * d.getMinutes() - 90;
-//   const hourDeg = 30 * d.getHours() - 90 + (30 * (minDeg + 90)) / 360;
-//   return { secDeg, minDeg, hourDeg };
-// };
-
-// rotateClock(second, minute, hour);
-// second.style.display = 'block';
-// minute.style.display = 'block';
-// hour.style.display = 'block';
