@@ -56,7 +56,6 @@ header h1 {
 .second,
 .minute,
 .hour {
-  display: none;
   position: absolute;
   width: 90px;
   height: 1px;
