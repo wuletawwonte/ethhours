@@ -7,12 +7,12 @@ const render = (timeDeg: TimeType) => {
   <hr class="hour" style="transform: rotate(${timeDeg.hour}deg) translateX(30px)" />
   <hr class="dot" />
   <div class="hour-characters">
-    <h3>፲፪</h3>
+    <h2>፲፪</h2>
     <div class="middle-hour-characters">
-      <h3>፱</h3>
-      <h3>፫</h3>
+      <h2>፱</h2>
+      <h2>፫</h2>
     </div>
-    <h3>፮</h3>
+    <h2>፮</h2>
   </div>
 </div>
 `;
