@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "My Ethiopian Clock Extension",
+  "description": "This extension will display the current time in Ethiopian time format",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_icon": "./assets/img/icon-512x512.png"
+  },
+  "icons": {
+    "128": "./assets/img/128.png",
+    "48": "./assets/img/48.png",
+    "16": "./assets/img/16.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
