@@ -3,6 +3,7 @@
   "short_name": "My Clock",
   "start_url": "/",
   "display": "standalone",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "./assets/img/icon-144x144.png",
