@@ -16,16 +16,17 @@ header {
   margin-top: 50px;
   margin-bottom: 100px;
   display: flex;
+  width: 400px;
   align-items: center;
-  justify-content: center;
-  padding: 20px 150px;
+  justify-content: space-between;
+  padding: 20px 35px;
   border-radius: 50px;
   background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Trebuchet MS', sans-serif;
 }
 
@@ -117,4 +118,77 @@ h2 {
   display: flex;
   align-self: stretch;
   justify-content: space-between;
+}
+
+/* Toggle button style  */
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5em;
+  padding: 0.125em;
+  background-image: linear-gradient(to bottom, #d5d5d5, #e8e8e8);
+  box-shadow: 0 1px 1px rgb(255 255 255 / 0.6);
+  /* resize for demo */
+  font-size: 1.5em;
+}
+
+.toggle-checkbox {
+  appearance: none;
+  position: absolute;
+  z-index: 1;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  /* fix em sizing */
+  font: inherit;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 0.375em;
+  width: 2.2em;
+  height: 1.2em;
+  background-color: #e8e8e8;
+  box-shadow: inset 0 0 0.0625em 0.125em rgb(255 255 255 / 0.2),
+    inset 0 0.0625em 0.125em rgb(0 0 0 / 0.4);
+  transition: background-color 0.4s linear;
+}
+
+.toggle-checkbox:checked + .toggle-container {
+  background-color: blue;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0.0625em;
+  border-radius: 0.3125em;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #e8e8e8;
+  box-shadow: inset 0 -0.0625em 0.0625em 0.125em rgb(0 0 0 / 0.1),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 0.2),
+    inset 0 0.1875em 0.0625em rgb(255 255 255 / 0.3),
+    0 0.125em 0.125em rgb(0 0 0 / 0.5);
+  transition: left 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-container > .toggle-button {
+  left: 1em;
+}
+
+.toggle-button-circles-container {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 0.125em;
+  position: absolute;
+  margin: 0 auto;
 }
