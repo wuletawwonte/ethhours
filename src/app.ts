@@ -7,12 +7,12 @@ const render = (timeDeg: TimeType) => {
   <hr class="hour" style="transform: rotate(${timeDeg.hour}deg) translateX(30px)" />
   <hr class="dot" />
   <div class="hour-characters">
-    <h3>፲፪</h3>
+    <h2>፲፪</h2>
     <div class="middle-hour-characters">
-      <h3>፱</h3>
-      <h3>፫</h3>
+      <h2>፱</h2>
+      <h2>፫</h2>
     </div>
-    <h3>፮</h3>
+    <h2>፮</h2>
   </div>
 </div>
 `;
@@ -44,5 +44,8 @@ const myTime = new Proxy(timeObj, {
 setInterval(() => {
   myTime.second = (new Date().getSeconds() / 60) * 360 - 90;
   myTime.minute = (new Date().getMinutes() / 60) * 360 - 90;
-  myTime.hour = (new Date().getHours() / 12) * 360 - 90;
+  myTime.hour =
+    (new Date().getHours() / 12) * 360 -
+    90 +
+    (new Date().getMinutes() / 60) * 30;
 }, 1000);
