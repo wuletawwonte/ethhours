@@ -1,4 +1,5 @@
 {
+  "name": "My Clock",
   "short_name": "My Clock",
   "start_url": "/",
   "display": "standalone",
