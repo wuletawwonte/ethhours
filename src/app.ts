@@ -31,7 +31,7 @@ const timeObj: TimeType = {
 };
 
 const myTime = new Proxy(timeObj, {
-  get(target: TimeType, key: 'second' | 'minute' | 'hour', value) {
+  get(target: TimeType, key: 'second' | 'minute' | 'hour') {
     return target[key];
   },
   set(target: TimeType, key: 'second' | 'minute' | 'hour', value) {
