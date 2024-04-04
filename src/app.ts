@@ -32,10 +32,7 @@ const timeObj: TimeType = {
 
 const myTime = new Proxy(timeObj, {
   get(target: TimeType, key: 'second' | 'minute' | 'hour', value) {
-    if (key === 'second' || key === 'minute') {
-      return 6 * target[key] - 90;
-    }
-    return 30 * target[key] - 90 + (30 * (target.minute + 90)) / 360;
+    return target[key];
   },
   set(target: TimeType, key: 'second' | 'minute' | 'hour', value) {
     target[key] = value;
@@ -45,7 +42,7 @@ const myTime = new Proxy(timeObj, {
 });
 
 setInterval(() => {
-  myTime.second = new Date().getSeconds();
-  myTime.minute = new Date().getMinutes();
-  myTime.hour = new Date().getHours();
+  myTime.second = (new Date().getSeconds() / 60) * 360 - 90;
+  myTime.minute = (new Date().getMinutes() / 60) * 360 - 90;
+  myTime.hour = (new Date().getHours() / 12) * 360 - 90;
 }, 1000);
