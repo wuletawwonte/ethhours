@@ -1,6 +1,6 @@
 {
-  "name": "My Clock",
-  "short_name": "My Clock",
+  "name": "ሰዓት",
+  "short_name": "ሰዓት",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
