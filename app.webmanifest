@@ -1,5 +1,6 @@
 {
   "short_name": "My Clock",
+  "start_url": "/",
   "icons": [
     {
       "src": "icon-192x192.png",
