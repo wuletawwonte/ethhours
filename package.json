@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wuletaw Wonte",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.3"
